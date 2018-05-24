@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import '../css/custom.css';
 import { connect } from 'react-redux';
+import { Link } from 'react-router-dom'
 
 class Header extends Component {
 	renderContent() {
@@ -20,12 +21,11 @@ class Header extends Component {
 		      <div className="logo">
 		      	<a href="/" className="brand-logo"> <img alt="logo" height='50px' src={require('./logo-white.png')} /></a>
 		      </div>
-		      
+
 		      <ul id="nav-mobile" className="right hide-on-med-and-down">
-		        <li><a href="/">Home</a></li>
-		        <li><a href="#spreadsheet">Account Activity</a></li>
-		        <li><a href="http://localhost:5000/auth/google">Login</a></li>
-		        <li><a href="http://localhost:5000/api/logout">Logout</a></li>
+		        <li><Link to='/home/dashboard'>Dashboard</Link></li>
+		        <li><Link to='/home/dashboard/account'>Account Activity</Link></li>		        
+		        <li><a href="/login">Logout</a></li>
 		        <li><img alt="logo" height='50px' src={require('../images/user.png')} /></li>
 		      </ul>
 		    </div>

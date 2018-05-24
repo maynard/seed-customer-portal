@@ -10,7 +10,11 @@ module.exports = (app) => {
 
   app.get(
     '/auth/google/callback',
-    passport.authenticate('google'))
+    passport.authenticate('google'),
+    (req, res) => {
+      res.redirect('/dashboard');
+    }
+  );
 
   app.get('/', (req, res) => {
      res.send({ hi: 'buddy'});
@@ -21,9 +25,23 @@ module.exports = (app) => {
   	res.send('CURRENT USER:  ' + req.user);
   });
 
+app.post('/login',
+  passport.authenticate('local', { successRedirect: '/dashboard',
+                                   failureRedirect: '/login',
+                                   failureFlash: true })
+);
+
+app.get('/api/signin', (req, res) => {
+  res.redirect('/home/dashboard');
+});
+
+app.get('/account', (req, res) => {
+  res.redirect('/home/dashboard/account');
+});
+
 app.get('/api/logout', (req, res) => {
 	req.logout();
-	res.send(req.user);
+	res.redirect('/');
 });
 
 };

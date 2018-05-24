@@ -12,7 +12,6 @@ class Boxes extends Component {
 
 		  		<div className="box">
 
-
 				    <div className="col s3">
 				      <div className="card-panel blue-grey darken-1">
 				        <span className="white-text">
@@ -21,6 +20,7 @@ class Boxes extends Component {
 				        </span>
 				      </div>
 				    </div>
+				  
 
 				    <div className="col s3">
 				      <div className="card-panel red">
