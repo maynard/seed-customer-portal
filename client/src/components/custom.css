@@ -1,0 +1,35 @@
+
+.logo {
+	padding-top:6px;
+	padding-left: 30px;
+}
+
+.graph {
+	width: 100%;
+	text-align: center;
+}
+
+.img-valign {
+  vertical-align: middle;
+  margin-bottom: 0.75em;
+}
+
+.text1 {
+  font-size: 44px;
+}
+
+.text2 {
+  font-size: 24px;
+}
+
+.text {
+  font-size: 650px;
+}
+
+.rightBox {
+	padding-top: -100px;
+}
+
+.activity {
+	padding-left: 10px;
+}
