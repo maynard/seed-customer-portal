@@ -23,7 +23,7 @@ module.exports = (app) => {
 
 app.get('/api/logout', (req, res) => {
 	req.logout();
-	res.send(req.user);
+	res.redirect('http://seed-customer-portal.s3-website.us-east-2.amazonaws.com');
 });
 
 };
