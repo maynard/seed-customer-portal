@@ -4,6 +4,7 @@
   "private": true,
   "proxy": {
     "/auth/google": {
+<<<<<<< HEAD
       "target": "https://murmuring-plateau-75228.herokuapp.com"
     },
     "/api/*": {
@@ -13,12 +14,24 @@
   "dependencies": {
     "ag-grid": "^17.1.1",
     "ag-grid-react": "^17.1.0",
+=======
+      "target": "http://localhost:5000"
+    },
+    "/api/*": {
+      "target": "http://localhost:5000"
+    }
+  },
+  "dependencies": {
+>>>>>>> 11979779bae5ee8225c9dce4e30d5e572587ddf0
     "axios": "^0.16.2",
     "materialize-css": "^0.99.0",
     "react": "^16.0.0-alpha.13",
     "react-dom": "^16.0.0-alpha.13",
+<<<<<<< HEAD
     "react-dom-factories": "^1.0.2",
     "react-google-login-component": "^0.9.3",
+=======
+>>>>>>> 11979779bae5ee8225c9dce4e30d5e572587ddf0
     "react-redux": "^5.0.5",
     "react-router-dom": "^4.1.1",
     "react-scripts": "1.0.10",
