@@ -41,7 +41,7 @@ app.get('/account', (req, res) => {
 
 app.get('/api/logout', (req, res) => {
 	req.logout();
-	res.redirect('/');
+	res.redirect('http://seed-customer-portal.s3-website.us-east-2.amazonaws.com');
 });
 
 };
